@@ -13,30 +13,24 @@
 // import math.h for sqrt() funcs.
 
 int main() {
+    int x = 10, integerA = 54, integerB = 66, int_P5 = 9, modulo = 46;
+    float floatA = 23.53, floatVarA, floatVarB, holdVarAB = 0, holdVarBA = 0, diam, radius, fp, sumFP = 9.8765432, subtrFP = 9.8765432, multFP = 9.8765432, divFP = 9.8765432, sumFPAddOp, subtrFPTakeAwayOp
+    double doubleA = 66.458;
+    bool boolA = true;
     /*--------------*/
     printf("Part #1");
-    int integerA, integerB;
-    float floatA = 23.53;
-    double doubleA = 66.458;
-    bool boolA; boolA = true;
-    
     printf("f%f, d%f\n", floatA, doubleA);
-    
     printf("A's value?: ");
     scanf(" %f", &integerA);
         //  ^pointer
-    
     printf("A = %f", integerA);
     
     /*--------------*/
     printf("Part #2");
-    float floatVarA, floatVarB;
     printf("fp A?: ");
     scanf(" %f", &floatVarA);
     printf("fp B? ");
     scanf(" %f", &floatVarB);
-    float holdVarAB = 0;
-    float holdVarBA = 0;
     holdVarAB += floatVarA;
     holdVarBA += floatVarB;
     floatVarA = holdVarBA;
@@ -49,14 +43,12 @@ int main() {
     
     /*--------------*/
     printf("Part #3");
-    //  no
+        //  no
     
     /*--------------*/
     printf("Part #4");
-    float diam;
     printf("diameter?: ");
     scanf(" %f", &diam);
-    float radius;
     radius = diam / 2;
     printf("A %f-wide cylinder's radius is %f\n", diam, radius);
     diam = 0;
@@ -64,13 +56,11 @@ int main() {
     
     /*--------------*/
     printf("Part #5");
-    float fp = 1.2345678;
-    float sumFP = 9.8765432;
-    float subtrFP = 9.8765432;
-    float multFP = 9.8765432;
-    float divFP = 9.8765432;
-    int int_P5 = 9;
-    int modulo = 46;
+    fp = 1.2345678;
+    sumFP = 9.8765432;
+    subtrFP = 9.8765432;
+    multFP = 9.8765432;
+    divFP = 9.8765432;
     sumFP += fp; printf("9.8765432+1.2345678 = %f\n", sumFP);
     subtrFP -= fp; printf("9.8765432—1.2345678 = %f\n", subtrFP);
     multFP *= fp; printf("9.8765432✕1.2345678 = %f\n", multFP);
@@ -81,8 +71,6 @@ int main() {
     
     /*--------------*/
     printf("Part #7\n");
-    float sumFPAddOp;
-    float subtrFPTakeAwayOp;
     sumFPAddOp = (sumFP ++);
     subtrFPTakeAwayOp = (subtrFP --);
     printf("%f ++ = %f\n", sumFP, sumFPAddOp);
@@ -90,7 +78,6 @@ int main() {
     
     /*--------------*/
     printf("Part #8\n");
-    int x = 10;
     x += x + x;
     printf("x + 2x = %i\n", x);
     x = 0;
