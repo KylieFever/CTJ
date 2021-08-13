@@ -36,10 +36,6 @@ int main() {
     floatVarA = holdVarBA;
     floatVarB = holdVarAB;
     printf("%f, %f -> %f, %f\n", floatVarB, floatVarA, floatVarA, floatVarB);
-    floatVarA = 0;
-    floatVarB = 0;
-    holdVarBA = 0;
-    holdVarAB = 0;
     
     /*--------------*/
     printf("Part #3");
@@ -51,8 +47,6 @@ int main() {
     scanf(" %f", &diam);
     radius = diam / 2;
     printf("A %f-wide cylinder's radius is %f\n", diam, radius);
-    diam = 0;
-    radius = 0;
     
     /*--------------*/
     printf("Part #5");
@@ -66,8 +60,6 @@ int main() {
     multFP *= fp; printf("9.8765432✕1.2345678 = %f\n", multFP);
     divFP /= fp; printf("9.8765432÷1.2345678 = %f\n", divFP);
     modulo %= int_P5; printf("9.8765432%%1.2345678 = %f\n", modulo);
-    multFP = 0;
-    divFP = 0;
     
     /*--------------*/
     printf("Part #7\n");
@@ -88,7 +80,6 @@ int main() {
     x %= 5;
     x ++;
     printf("%i\n", x);
-    x = 0;
     
     return 0;
 }
